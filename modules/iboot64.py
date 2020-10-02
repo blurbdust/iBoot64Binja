@@ -285,7 +285,7 @@ class iBoot64View(BinaryView):
 
     def find_reset(self, data):
         i = 0
-        end = data.find_next_data(0, 'iBoot for')
+        end = data.find_next_data(0, 'iBoot')
         if end is None:
             end = data.find_next_data(0, 'SecureROM for')
             if end is None:
